@@ -21,6 +21,7 @@ function Foot() {
   )
 }
 const Footer=styled.div`
+overflow-x:hidden;
 display:flex;
 justify-content:center;
 flex-direction:column;
@@ -29,11 +30,25 @@ width:100%;
 background-color: #121212;
 font-size:150%;
 align-items:center;
+@media(max-width:360px){
+  height:40vh;
+  display:block;
+  font-size:120%;
+}
 `
 const Text=styled.div`
+@media(max-width:360px){
+  padding:0;
+}
 padding-top:2%;
 `
 const Icons=styled.div`
+@media(max-width:360px){
+  margin:0;
+  p{
+    margin:25px !important;
+  }
+}
 display:flex;
 margin-right:11%;
 p{

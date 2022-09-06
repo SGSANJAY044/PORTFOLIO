@@ -6,6 +6,7 @@ import Div from "./components/DIV"
 import Foot from "./components/Foot";
 import Myworks from "./components/Myworks"
 import Skills from "./components/Skills";
+import Contact from "./components/Contact"
 function App() {
   return (
     <div>
@@ -16,6 +17,8 @@ function App() {
     <Myworks />
     <Div/>
     <Skills />
+    <Div/>
+    <Contact/>
     <Foot />
     </div>
   );

@@ -8,15 +8,30 @@ import Paper  from '@material-ui/icons/Description'
 import { Computer } from '@material-ui/icons'
 import { PermContactCalendar } from '@material-ui/icons'
 function Header() {
+    window.onscroll=function(){stFunction()}
     const [sideNavstate,setSideNavState]=useState(false);
+    var st=document.getElementById("nav")
+    var cl=document.getElementById("item")
+    var sticky=0
+    function stFunction(){
+        if (window.pageYOffset == sticky) {
+            st.style.background="transparent";
+            st.style.boxShadow="none";
+            st.style.color="black";
+        } else {
+            st.style.background="white";
+            st.style.boxShadow="rgb(0 0 0 / 69%) -10px 12px 20px -15px";
+            st.style.color="rgb(255,200,0)";
+        }
+    }
   return (
-    <Container>
+    <Container id='nav'>
         <a>
             <img src='logo.png'/>
         </a>
         <Menu>
             <a>
-                <span>Home</span>
+                <span id='item'>Home</span>
             </a>
             <a>
                 <span>About</span>
@@ -44,22 +59,25 @@ function Header() {
   )
 }
 const Container=styled.div`
+max-width:100%;
 z-index:1;
 display: flex;
-position:sticky;
+position:fixed;
 align-items: center;
 padding: 0 20px;
-box-shadow: rgb(0 0 0 / 69%) -10px 12px 20px -15px;
 top: 0;
 right: 0;
 left: 0;
-background:white;
 height: 70px;
 a{
     img{
         height: 40px;
     }
 }
+@media(max-width:360px){
+    padding:0 0;
+}
+overflow-x: hidden;
 `
 const Menu=styled.div`
 display:flex;
@@ -75,7 +93,7 @@ a{
     span{
         font-size: 20px;
         font-weight: bold;
-        color: rgb(255, 200, 0);
+        // color: rgb(255, 200, 0);
         position: relative;
         &:after{
             content:"";
@@ -135,6 +153,7 @@ li{
 }
 `
 const Three=styled(MenuIcon)`
+margin-bottom:20px;
 opacity: 0;
 color: rgb(255, 200 ,0);
 margin-left: auto;

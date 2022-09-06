@@ -91,7 +91,10 @@ function Skills() {
 }
 const Empty=styled.div`
 height:45vh;
-width:15%;`
+width:15%;
+@media(max-width:1090px){
+    display:none;
+}`
 const Title=styled.div`
 height:10vh;
 text-align:center;
@@ -112,17 +115,52 @@ span{
 `
 const CC=styled.div`
 width:100%;
-height:90vh;`
+height:90vh;
+@media(max-width:1090px){
+    height:200vh;
+}
+@media(max-width:360px){
+  height:130vh !important;
+}`
 const Container=styled.div`
 width:100%;
 height:80vh;
 background:#f8d49a;
+overflow-x:hidden;
+@media(max-width:1090px){
+    height:190vh;
+}
+@media(max-width:360px){
+  height:110vh !important;
+}
 `
 const C1=styled.div`
-display:flex;`
+display:flex;
+@media(max-width:1090px){
+    display:block;
+    padding-left:25%;
+}
+@media(max-width:683px){
+   padding:0;
+}`
 const C2=styled.div`
-display:flex;`
+display:flex;
+@media(max-width:1090px){
+    display:block;
+    padding-left:25%;
+}
+@media(max-width:683px){
+    padding:0;
+}`
 const Content=styled.div`
+@media(max-width:360px){
+  height:10vh;
+  width:60vh;
+  margin:15vh;
+  h1{
+    top:-12vh !important;
+  }
+}
 width:40%;
 margin:0 5%;
 height:45vh;
@@ -146,6 +184,9 @@ h1{
 }
 `
 const Line=styled.div`
+@media{
+  display:none;
+}
 padding-left:5%;
 `
 export default Skills

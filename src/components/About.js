@@ -31,6 +31,9 @@ function About() {
   )
 }
 const Text=styled.div`
+@media(max-width:360px){
+    font-size:3vh;
+}
 display:flex;
 justify-content:center;
 align-items:center;
@@ -44,12 +47,22 @@ div{
 p{
     margin:0;
 }
+overflow-x:hidden;
 `
 const Container=styled.div`
 height:90vh;
 width:100%;
+@media(max-width:360px){
+    height:70vh;
+}
 `
 const Content=styled.div`
+@media(max-width:360px){
+    img{
+        display:none;
+    }
+    height:60vh !important;
+}
 display:flex;
 justify-content:center;
 height: 75vh;
@@ -74,6 +87,11 @@ position: relative;
 }
 `
 const Title=styled.div`
+@media(max-width:360px){
+    font-size:15px;
+    padding:0;
+    margin-top:10px
+}
 padding-left:5%;
 padding-top:2%;
 span{

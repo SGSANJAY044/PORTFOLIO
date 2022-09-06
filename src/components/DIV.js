@@ -15,6 +15,9 @@ function divider() {
   )
 }
 const Div=styled.div`
+@media(max-width:360px){
+  display:none;
+}
 display: block;
 text-align:center;
 color:red;

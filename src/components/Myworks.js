@@ -26,9 +26,18 @@ function Myworks() {
   )
 }
 const Container=styled.div`
+height:100vh;
 margin:5% 0;
+@media(max-width:360px){
+  margin:0;
+}
+overflow-x:hidden;
 `
 const Head=styled.div`
+@media(max-width:360px){
+  font-size:60%;
+  margin:20px 0;
+}
 text-align:center;
 span{
     color:#36323C;
@@ -46,11 +55,21 @@ span{
 }
 `
 const Content=styled.div`
+@media(max-width:360px){
+  justify-content:center;
+  margin:0;
+  a{
+    height:130px !important;
+    margin:10px  !important;
+  font-size:150% !important; 
+  }
+}
 display:flex;
 margin:10% 4%;
 justify-content:space-between;
 @media(max-width:1200px){
-  display:block;
+  display:flex;
+  flex-direction:column;
 }
 a{
   @media(max-width:1200px){
@@ -67,7 +86,7 @@ a{
   display:block;
   height:180px;
   font-size: 200%; 
-  color: #ffffff;
+  color: white;
   font-weight:600;
   img{
     border-bottom-left-radius:10px;
