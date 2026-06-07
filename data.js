@@ -69,15 +69,13 @@ const PORTFOLIO_DATA = {
   // Experience Section
   experiences: [
     {
-      dateRange: "Mar 2024 – Present",
-      title: "Frontend Developer",
+      dateRange: "Jun 2024 – Present",
+      title: "Software Developer",
       company: "SurveySparrow",
       companyUrl: "https://surveysparrow.com",
-      subtitle: "Intern → Full-time",
-      description: `Joined SurveySparrow as a third-year intern and transitioned into a full-time Frontend Developer.
-        Worked across platform and core teams on frontend infrastructure, build and bundle improvements,
-        API optimizations, and system upgrades, while also contributing to product features and ongoing enhancements.`,
-      technologies: ["React", "TanStack", "Express.js", "PostgreSQL", "Docker", "Jenkins"],
+      subtitle: "Full-Stack, Platform Engineering & AI Agents",
+      description: `Joined SurveySparrow as a Software Developer Intern and progressed to a full-time Software Developer, contributing across full-stack product development, backend systems, platform engineering, CI/CD automation, and internal AI initiatives. Modernized the platform by extracting the EUI module into a micro-frontend architecture, migrated APIs from Hapi.js to Express.js, upgraded services from Node.js 14 to 18, and improved application performance through bundle and loading optimizations. Automated engineering workflows using Jenkins, Jira, quality gates, and internal tooling, while contributing to Hive, an internal AI-powered engineering agent integrating collaboration, observability, and developer productivity tools to streamline engineering operations.`,
+      technologies: ["React", "Node.js", "Express.js", "Hapi.js", "Elasticsearch", "Webpack", "Jenkins", "AI Agents", "MCP"],
     },
     {
       dateRange: "Dec 2020 - Feb 2024",
